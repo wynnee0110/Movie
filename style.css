@@ -1,0 +1,135 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0D0D0D;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  padding: 20px;
+  text-align: end;
+  background-color: #1F1F1F;
+
+}
+
+.search {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  background-color: #333;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.movie {
+  position: relative;
+  background-color: #1F1F1F;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+.overview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.767);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #ffffff;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.movie:hover .overview {
+opacity: 1;
+backdrop-filter: blur(2px);
+transition: transform 0.4s ease-in-out;
+}
+
+
+
+.movie:hover {
+  transform: scale(1.05);
+  
+}
+
+.movie img {
+  width: 100%;
+  display: block;
+}
+
+.movie-info {
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.movie-info h3 {
+  font-size: 18px;
+}
+
+.movie-info span {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+.green {
+  background-color: #21d07a;
+  color: #000;
+}
+
+.orange {
+  background-color: #d2d531;
+  color: #000;
+}
+
+.red {
+  background-color: #db2360;
+  color: #fff;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 20px;
+  background-color: #2828287a;
+}
+
+header img {
+  height: 50px;
+}
+
